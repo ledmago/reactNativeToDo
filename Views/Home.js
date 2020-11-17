@@ -22,7 +22,6 @@ const HomePage = () => {
 
     useEffect(() => {
         loadStore();
-        // deleteFromList(0)
 
     }, [])
     useEffect(() => {
@@ -49,7 +48,6 @@ const HomePage = () => {
 
     const deleteFromList = async (value) => {
         setList(prev => { return prev.filter(item => item.text != value) });
-        // await AsyncStorage.setItem('list', JSON.stringify(list));
     };
 
     const updateItem = async (index, value) => {
